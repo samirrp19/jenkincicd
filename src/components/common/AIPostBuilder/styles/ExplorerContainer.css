@@ -1,0 +1,107 @@
+/* ExplorerContainer Wrapper */
+.explorer-container-wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* SplitPane styling */
+.split-pane {
+  height: 100%;
+  display: flex;
+}
+
+.horizontal-resizer {
+  height: 5px;
+  background-color: #333;
+  cursor: row-resize;
+}
+
+/* Resizer styling between Explorer and Editor */
+.resizer {
+  background-color: #333; /* Matches the VS Code dark theme */
+  width: 5px;
+  cursor: col-resize;
+  user-select: none;
+  transition: background-color 0.2s ease;
+}
+
+.resizer:hover {
+  background-color: #555;
+}
+
+/* Explorer Panel Styling */
+.explorer-container {
+  background-color: #252526;
+  color: #cccccc;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  border-right: 1px solid #333333;
+  padding-left: 50px;
+  overflow: hidden;
+}
+
+.explorer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  padding-left: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #cccccc;
+  border-bottom: 1px solid #333333;
+}
+
+.explorer-body {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.folder-item, .file-item {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.folder-item:hover, .file-item:hover {
+  background-color: #333333;
+}
+
+.folder-children {
+  margin-left: 20px;
+}
+
+.folder-icon, .file-item > svg {
+  margin-right: 10px;
+}
+
+.folder-item > svg {
+  margin-right: 5px;
+}
+
+/* Editor and Terminal Split Container */
+.editor-container {
+  background-color: #1e1e1e;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #cccccc;
+  flex: 1 1 auto;
+  flex-grow: 1;
+}
+
+
+.terminal-tabs-container {
+  background-color: #1e1e1e;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}

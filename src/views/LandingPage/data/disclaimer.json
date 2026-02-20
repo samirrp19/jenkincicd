@@ -1,0 +1,113 @@
+{
+    "title": "Disclaimer for Learntute",
+    "sections": [
+      {
+        "heading": "1. General Information",
+        "content": "Learntute (\"we,\" \"our,\" or \"us\") provides AI-powered coding assistance, enterprise and university solutions, and a global social community for developers. This disclaimer governs your use of our platform and services. By accessing or using Learntute, you acknowledge and agree to the terms outlined in this disclaimer. If you do not agree, please refrain from using our services."
+      },
+      {
+        "heading": "2. No Professional or Legal Advice",
+        "items": [
+          "The AI-generated code, recommendations, and insights provided on Learntute are for informational and educational purposes only.",
+          "We do not guarantee the accuracy, completeness, or suitability of AI-generated content for your specific needs.",
+          "You are solely responsible for reviewing, testing, and validating any AI-generated output before use.",
+          "Learntute is not a substitute for professional software development, legal, regulatory, or compliance advice."
+        ]
+      },
+      {
+        "heading": "3. Limitation of Liability",
+        "items": [
+          "Services are provided “as is” and “as available” with no warranties of any kind.",
+          "We disclaim all liability for any loss, damage, or harm arising from your use of or reliance on AI-generated content or third-party resources.",
+          "We are not liable for any indirect, incidental, or consequential damages, including data loss or business interruption."
+        ]
+      },
+      {
+        "heading": "4. User Responsibilities",
+        "items": [
+          "Users must ensure all content generated or used through Learntute complies with applicable laws and ethical guidelines in their jurisdiction.",
+          "Learntute disclaims responsibility for misuse, user disputes, or illegal applications of AI-generated content.",
+          "Users must not exploit or misrepresent AI output for unethical or unlawful purposes."
+        ]
+      },
+      {
+        "heading": "5. Third-Party Links and Services",
+        "items": [
+          "Learntute may link to third-party websites or services for convenience.",
+          "We do not control or endorse external content and are not responsible for third-party terms or privacy practices.",
+          "Use of such services is at your own discretion and risk."
+        ]
+      },
+      {
+        "heading": "6. Changes to this Disclaimer",
+        "content": "Learntute may update this disclaimer from time to time. Continued use of our platform following changes constitutes acceptance of the revised terms."
+      },
+      {
+        "heading": "7. Governing Law and Dispute Resolution",
+        "content": "Unless otherwise required by regional law, this disclaimer is governed by the jurisdiction in which Learntute is operated. For users in India, any disputes shall be resolved via arbitration in Bengaluru, Karnataka, under the Arbitration and Conciliation Act, 1996. Users in other regions are subject to local laws and dispute mechanisms as outlined below."
+      },
+      {
+        "heading": "8. Contact Information",
+        "items": [
+          "📧 Email: codex@learntute.com"
+        ]
+      },
+      {
+        "heading": "Regional Addendums",
+        "subsections": [
+          {
+            "region": "A. European Union (EU) – GDPR Compliance",
+            "items": [
+              "Learntute complies with the General Data Protection Regulation (GDPR).",
+              "Users have the right to access, rectify, delete, or restrict the use of their personal data.",
+              "Requests can be sent to codex@learntute.com with subject line “GDPR Request.”"
+            ]
+          },
+          {
+            "region": "B. United States – State Privacy Laws (e.g., CCPA, CPA)",
+            "items": [
+              "Residents of California, Colorado, and other states with privacy laws may have rights under CCPA, CPA, and similar legislation.",
+              "You can request to access, delete, or opt out of data collection.",
+              "Learntute does not sell user data.",
+              "Submit requests via email with subject line “U.S. Privacy Request.”"
+            ]
+          },
+          {
+            "region": "C. India – Information Technology Act Compliance",
+            "items": [
+              "Learntute operates in accordance with the Information Technology Act, 2000 and IT Rules.",
+              "Disputes are subject to arbitration in Bengaluru, Karnataka."
+            ]
+          },
+          {
+            "region": "D. Canada – PIPEDA Compliance",
+            "items": [
+              "Learntute adheres to the Personal Information Protection and Electronic Documents Act (PIPEDA).",
+              "Canadian users have the right to access and correct personal data and to challenge its handling.",
+              "Data is stored securely and used only for legitimate business purposes.",
+              "To exercise your rights, contact codex@learntute.com with subject line “PIPEDA Request.”"
+            ]
+          },
+          {
+            "region": "E. United Kingdom (UK) – UK GDPR and Data Protection Act 2018",
+            "items": [
+              "Learntute complies with UK GDPR and the Data Protection Act 2018.",
+              "UK users can access, correct, and request deletion of their data.",
+              "Learntute will respond within legally required timeframes.",
+              "Contact codex@learntute.com with subject “UK GDPR Request.”"
+            ]
+          },
+          {
+            "region": "F. Australia – Privacy Act 1988 (Cth)",
+            "items": [
+              "Learntute follows the Australian Privacy Principles (APPs) under the Privacy Act 1988.",
+              "Australian users have rights to access and correct their personal information, and to lodge privacy complaints.",
+              "Learntute does not share personal information without consent unless legally required.",
+              "Email codex@learntute.com with subject “AU Privacy Request.”"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

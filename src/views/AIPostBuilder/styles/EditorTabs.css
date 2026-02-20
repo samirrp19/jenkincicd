@@ -1,0 +1,99 @@
+/* Editor Tabs Container */
+.editor-tabs {
+  display: flex;
+  background-color: #252526;
+  padding: 5px;
+  border-bottom: 1px solid #333;
+  overflow-x: hidden; /* Hide overflow to prevent horizontal scroll */
+  white-space: nowrap;
+  position: relative; /* Required for positioning the overflow menu */
+  height: 40px; /* Set fixed height to avoid resizing issues */
+}
+
+/* Individual Tab Styling */
+.editor-tab {
+  padding: 8px 15px;
+  margin-right: 2px;
+  display: flex;
+  align-items: center;
+  background-color: #2d2d2d;
+  color: #cccccc;
+  font-size: 13px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 3px 3px 0 0;
+  transition: background-color 0.3s ease, border 0.3s ease;
+  min-width: 100px; /* Ensure minimum width for each tab */
+  max-width: 200px; /* Prevent tabs from getting too wide */
+  text-overflow: ellipsis; /* Handle long filenames */
+  overflow: hidden;
+}
+
+/* Active Tab Styling */
+.editor-tab.active {
+  background-color: #1e1e1e;
+  color: #fff;
+  border-color: #007acc #007acc transparent; /* Highlight active tab */
+}
+
+/* Close Button Styling */
+.close-tab-icon {
+  margin-left: 10px;
+  color: #cccccc;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.close-tab-icon:hover {
+  color: #ff0000; /* Close icon turns red on hover */
+}
+
+/* Tabs Container */
+.tabs {
+  display: flex;
+  flex-grow: 1;
+  white-space: nowrap;
+  padding-right: 40px; /* Space for the overflow menu */
+  overflow-x: auto; /* Allow horizontal scrolling if too many tabs */
+  min-width: 0; /* Prevent the container from shrinking below a certain size */
+}
+
+/* Overflow "..." Icon */
+.overflow-menu {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+  color: #ccc;
+  background-color: #2d2d2d;
+  position: absolute;
+  right: 5px;
+  top: 0;
+  z-index: 5;
+  height: 100%; /* Ensure it aligns with tab height */
+}
+
+/* Overflow Dropdown Menu */
+.overflow-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  z-index: 10;
+  padding: 5px;
+  max-height: 200px;
+  overflow-y: auto;
+  min-width: 150px; /* Ensure a minimum width for the dropdown */
+}
+
+/* Overflow File Item */
+.overflow-file {
+  padding: 5px 10px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.overflow-file:hover {
+  background-color: #333;
+}

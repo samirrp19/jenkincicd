@@ -1,0 +1,40 @@
+.sidebar-container {
+  background-color: #333;
+  width: 50px; /* Sidebar width */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0; 
+  align-items: center;
+  padding-top: 10px;
+  border-right: 1px solid #252526;
+  position: relative;
+  z-index: 1; /* Ensure Sidebar is visible over other components */
+}
+
+.sidebar-tab {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-tab:hover {
+  background-color: #454545;
+}
+
+.sidebar-tab.active {
+  background-color: #007acc;
+}
+
+.sidebar-icon {
+  color: #cccccc;
+  font-size: 20px;
+}
+
+.sidebar-spacer {
+  flex-grow: 1;
+}

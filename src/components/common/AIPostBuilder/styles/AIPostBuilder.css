@@ -1,0 +1,43 @@
+/* CSS for AIPostBuilder component */
+
+.ai-post-builder-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden; /* Prevent scrolling */
+  }
+  
+  .ai-main-container {
+    flex-grow: 1; /* This makes the main content take up the remaining space between the header and footer */
+    overflow: hidden; /* Ensure there's no scrolling in the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5; /* Background color, adjust as needed */
+  }
+  
+  /* Fixed toolbar and footer */
+  .MuiAppBar-root {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .ai-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  /* Adjust the loading screen to be centered */
+  .loading-screen {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+  }
+  

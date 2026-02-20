@@ -1,0 +1,85 @@
+{
+    "title": "Terms of Service",
+    "description": "Welcome to Learntute! These Terms of Service govern your access to and use of our website and services. By accessing or using our Service, you agree to abide by these Terms.",
+    "sections": [
+      {
+        "heading": "Interpretation and Definitions",
+        "subsections": [
+          {
+            "heading": "Interpretation",
+            "content": "Words with capitalized initial letters have defined meanings under the following conditions. The definitions provided shall have the same meaning regardless of singular or plural usage."
+          },
+          {
+            "heading": "Definitions",
+            "content": "For the purposes of these Terms of Service:",
+            "items": [
+              "Account means a unique account created for You to access our Service or parts of our Service.",
+              "Company (referred to as either \"the Company\", \"We\", \"Us\" or \"Our\") refers to Learntute, Marathahalli, Bangalore, Karnataka, India, 560037.",
+              "Country refers to Karnataka, India.",
+              "Service refers to the Website and any related applications, content, or services provided by Learntute.",
+              "Terms (also referred to as \"Terms of Service\") mean these Terms of Service that form the agreement between You and the Company.",
+              "User (referred to as \"You\") means the individual accessing or using the Service, or the company or other legal entity on behalf of which such individual is accessing or using the Service.",
+              "Website refers to Learntute, accessible from https://learntute.com."
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Acceptance of Terms",
+        "content": "By accessing or using the Service, You agree to be bound by these Terms. If You do not agree with any part of these Terms, You must not use the Service."
+      },
+      {
+        "heading": "Global Compliance & Jurisdiction Considerations",
+        "content": "Learntute is accessible worldwide. Users must comply with applicable local laws, including but not limited to:",
+        "items": [
+          "General Data Protection Regulation (GDPR) (EU/EEA residents)",
+          "California Consumer Privacy Act (CCPA) (California, USA residents)",
+          "Personal Information Protection and Electronic Documents Act (PIPEDA) (Canada)",
+          "Lei Geral de Proteção de Dados (LGPD) (Brazil)",
+          "Information Technology Act, 2000 (India)",
+          "Other applicable national and regional data protection laws"
+        ],
+        "note": "If any provision of these Terms is found to be unenforceable under certain jurisdictions, the remaining provisions shall still apply."
+      },
+      {
+        "heading": "User Accounts",
+        "content": "When You create an account, You must provide accurate and complete information. You are responsible for maintaining the confidentiality of Your account and password and for all activities under Your account. We reserve the right to suspend or terminate accounts that violate these Terms."
+      },
+      {
+        "heading": "Use of the Service",
+        "content": "You agree to use the Service in compliance with applicable laws and not to engage in any prohibited activities, including but not limited to:",
+        "items": [
+          "Unauthorized access, hacking, or security breaches.",
+          "Posting unlawful, infringing, or harmful content.",
+          "Disrupting the normal operation of the Service."
+        ]
+      },
+      {
+        "heading": "Content and Intellectual Property Rights",
+        "content": "All content on the Service, including text, images, software, and trademarks, belongs to Learntute or its licensors and is protected by intellectual property laws. Users must not reproduce, distribute, or exploit content without permission."
+      },
+      {
+        "heading": "Termination",
+        "content": "We may terminate or suspend Your access to the Service without prior notice if You violate these Terms."
+      },
+      {
+        "heading": "Limitation of Liability",
+        "content": "To the maximum extent permitted by law, Learntute shall not be liable for any indirect, incidental, special, or consequential damages arising from the use of the Service."
+      },
+      {
+        "heading": "Governing Law and Dispute Resolution",
+        "content": "These Terms shall be governed by and construed in accordance with the laws of India. However, Users residing in other jurisdictions may have rights under their local laws. Disputes shall be resolved through arbitration in Bangalore, Karnataka, India, unless otherwise required by law."
+      },
+      {
+        "heading": "Changes to These Terms",
+        "content": "We reserve the right to modify these Terms at any time. We will notify Users of changes via email or a notice on our Service before changes take effect."
+      },
+      {
+        "heading": "Contact Us",
+        "items": [
+          "Email: codex@learntute.com"
+        ]
+      }
+    ]
+  }
+  

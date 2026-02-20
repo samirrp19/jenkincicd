@@ -1,0 +1,50 @@
+.project-mode-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: row;
+  overflow: hidden;  /* Prevent scrolling */
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  background-color: #2d2d2d;
+  color: white;
+  position: relative;
+}
+
+.left-side, .right-side {
+  display: flex;
+  align-items: center;
+}
+
+.center-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.project-button {
+  color: white;
+  text-transform: none;
+  margin-right: 10px;
+}
+
+.project-avatar {
+  background-color: #007acc;
+}
+
+/* Styling for the dropdown menu */
+.MuiMenu-paper {
+  background-color: #2d2d2d;
+  color: white;
+}
+
+.MuiMenuItem-root:hover {
+  background-color: #007acc;
+  color: white;
+}

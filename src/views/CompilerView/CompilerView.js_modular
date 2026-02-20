@@ -1,0 +1,147 @@
+// CompilerView.jsx — Modularized LanguagePage Entry
+import React, { useRef, useState } from 'react';
+import { Box } from '@mui/material';
+import LanguageEditorPanel from './components/LanguageEditorPanel';
+import LanguageToolbar from './components/LanguageToolbar';
+import LanguageSidebar from './components/LanguageSidebar';
+import LanguageIOPanel from './components/LanguageIOPanel';
+import useLanguageSocket from './hooks/useLanguageSocket';
+import useLanguageLogic from './hooks/useLanguageLogic';
+
+const CompilerView = ({ code: initialCode, language, toggleFullscreen, isFullscreen }) => {
+  const programBuffer = useRef('');
+
+  // UI state for sidebar
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [sidebarContent, setSidebarContent] = useState('');
+
+  // Core logic and state
+  const {
+    user,
+    token,
+    selectedLanguage,
+    setSelectedLanguage,
+    currentFile,
+    setCurrentFile,
+    code,
+    setCode,
+    files,
+    setFiles,
+    output,
+    setOutput,
+    standardInput,
+    setStandardInput,
+    aiPrompt,
+    setAiPrompt,
+    programTitle,
+    setProgramTitle,
+    programDescription,
+    setProgramDescription,
+    tags,
+    setTags,
+    visibility,
+    setVisibility,
+    loading,
+    setLoading,
+    handleLanguageChange,
+    handleFileUpload,
+    handleSaveProgram,
+  } = useLanguageLogic({ initialCode, initialLanguage: language });
+
+  const { emitProgramPrompt } = useLanguageSocket({
+    token,
+    userId: user?.id,
+    setCode,
+    setLoading,
+    programBuffer,
+  });
+
+  // Run compiler
+  const handleExecuteCode = async () => {
+    try {
+      const { default: compilerService } = await import('./hooks/compilerService');
+      const res = await compilerService.executeCode(code, selectedLanguage);
+      setOutput({ stdout: res.stdout, stderr: res.stderr, error: '' });
+    } catch (err) {
+      setOutput({ stdout: '', stderr: '', error: err.message });
+    }
+  };
+
+  return (
+    <Box sx={{ display: 'flex', height: '100vh', width: '100vw', overflow: 'hidden' }}>
+      {/* Left Panel */}
+      <LanguageEditorPanel
+        selectedLanguage={selectedLanguage}
+        setLanguage={setSelectedLanguage}
+        currentFile={currentFile}
+        setCurrentFile={setCurrentFile}
+        files={files}
+        setFiles={setFiles}
+        code={code}
+        setCode={setCode}
+        handleLanguageChange={handleLanguageChange}
+        handleFileUpload={handleFileUpload}
+      />
+
+      {/* Right Panel */}
+      <Box sx={{ flexGrow: 1, backgroundColor: '#f7f7f7', display: 'flex', flexDirection: 'column' }}>
+        <LanguageToolbar
+          currentFile={currentFile}
+          selectedLanguage={selectedLanguage}
+          handleLanguageChange={handleLanguageChange}
+          handleFileUpload={handleFileUpload}
+          onAITutor={() => {
+            setSidebarContent('ai-tutor');
+            setIsSidebarOpen(true);
+          }}
+          onSave={() => {
+            setSidebarContent('save');
+            setIsSidebarOpen(true);
+          }}
+          onPrompt={() => {
+            setSidebarContent('prompt');
+            setIsSidebarOpen(true);
+          }}
+          onTask={() => {
+            setSidebarContent('task');
+            setIsSidebarOpen(true);
+          }}
+          onRun={handleExecuteCode}
+          onToggleFullscreen={toggleFullscreen}
+          isFullscreen={isFullscreen}
+        />
+
+        <LanguageIOPanel
+          standardInput={standardInput}
+          setStandardInput={setStandardInput}
+          output={output}
+        />
+      </Box>
+
+      {/* Sidebar */}
+      <LanguageSidebar
+        isSidebarOpen={isSidebarOpen}
+        setIsSidebarOpen={setIsSidebarOpen}
+        sidebarContent={sidebarContent}
+        aiPrompt={aiPrompt}
+        setAiPrompt={setAiPrompt}
+        loading={loading}
+        setLoading={setLoading}
+        programTitle={programTitle}
+        setProgramTitle={setProgramTitle}
+        programDescription={programDescription}
+        setProgramDescription={setProgramDescription}
+        tags={tags}
+        setTags={setTags}
+        visibility={visibility}
+        setVisibility={setVisibility}
+        code={code}
+        language={selectedLanguage}
+        onSubmitPrompt={() => emitProgramPrompt(aiPrompt, selectedLanguage)}
+        onSave={handleSaveProgram}
+      />
+    </Box>
+  );
+};
+
+export default CompilerView;

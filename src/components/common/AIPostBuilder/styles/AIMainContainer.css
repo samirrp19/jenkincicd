@@ -1,0 +1,17 @@
+/* CSS for AIMainContainer */
+
+.ai-builder-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .ai-builder-content > * {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Ensure no extra scrollbars */
+  }
+  
