@@ -24,7 +24,7 @@ coverage/
 ########################################
 # Yarn Berry (v2+ / v3+ / v4)
 ########################################
-.yarn/*
+!.yarn/*
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
